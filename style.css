@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f5;
+}
+
+.iphone {
+  width: 250px;
+  height: 500px;
+  background-color: #000;
+  border-radius: 40px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.notch {
+  width: 100%;
+  height: 30px;
+  background-color: #333;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.camera {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.speaker {
+  width: 40px;
+  height: 5px;
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.screen {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fff;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  color: #333;
+}
+
+.signal, .wifi, .battery {
+  width: 20px;
+  height: 10px;
+  background-color: #ccc;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.app {
+  width: 50px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app img {
+  width: 50px;
+  height: 50px;
+}
+
+.app p {
+  font-size: 10px;
+  color: #333;
+}
+
+.dock {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: rgba(240, 240, 245, 0.8);
+  border-radius: 20px;
+}
+
+.dock-app img {
+  width: 40px;
+  height: 40px;
+}
+
+.home-button {
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
